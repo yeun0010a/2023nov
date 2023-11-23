@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul.daumBtn {
+            margin: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul.daumBtn li a.btn{
+            display: block;
+            width: 28px;height: 16px;
+            background: url("./images/img_pctop_200207.png") no-repeat -40px -40px;
+        }
+    
+        ul.daumBtn li a:hover.btn{
+            background-position: -70px -40px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="daumBtn">
+        <li><a href="#" class="btn"></a></li>
+        <li><a href="#" class="btn"></a></li>
+        <li><a href="#" class="btn"></a></li>
+    </ul>
+</body>
+
+</html>

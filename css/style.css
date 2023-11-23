@@ -1,0 +1,114 @@
+@import url('https://cdn.jsdelivr.net/npm/noto-sans-cjk-kr@latest/css/NotoSansCJKkr.css');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Noto Sans CJK KR', sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blind {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    text-indent: -9999999px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+span {
+    font-size: 15px;
+}
+
+header nav.menu {
+    width: 676px;
+    height: 75px;
+    margin: 150px auto;
+}
+
+header nav.menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav.menu ul li a span.icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    display: block;
+
+}
+
+header nav.menu ul li a span.icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-image: url("../images/naverimg.png");
+    background-size: 422px 405px;
+    background-position: 0 -128px;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+
+header nav.menu ul li a span.title {
+    text-align: center;
+    margin-top: 8px;
+    display: block;
+}
+
+header nav.menu ul li a:hover span.icon::before,
+header nav.menu ul li a:focus span.icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -3px;
+    background-image: url("../images/naverimg.png");
+    background-size: 422px 405px;
+    background-position: -144px -2px;
+    background-repeat: no-repeat;
+    width: 54px;
+    height: 54px;
+}
+span.icon::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background-image: url("../images/naverimg.png");
+    top: 0; left: 0; right: 0; bottom: 0; margin: auto;
+    background-size: 422px 405px;
+    background-repeat: no-repeat;
+    background-position: -250px -90px;
+    width: 44px;
+   height: 44px;
+}
+
+/* mail */
+span.icon.mail_icon::after {background-position: -250px -90px;}
+span.icon.cafe_icon::after {background-position: -250px -0px;}
+span.icon.blog_icon::after {background-position: -201px -98px;}
+span.icon.shopping_icon::after {background-position: -90px -209px;;}
+span.icon.news_icon::after {background-position: 0px -209px;}
+span.icon.stock_icon::after {background-position: -108px -209;}
+span.icon.real_estate_icon::after {background-position: -45px -209px; }
+span.icon.map_icon::after {background-position: -201px -0px;}
+span.icon.webtoon_icon::after {background-position: -225px -209px;}
+span.icon.more_icon::after {background-position: -250px -135px;}

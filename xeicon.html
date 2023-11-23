@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xeicon menu</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <style>
+        /* https://xpressengine.github.io/XEIcon/index.html - xeicon site */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn {
+            margin: 50px;
+        }
+
+        .btn a.bar {
+            width: 100px;
+            height: 30px;
+            background-color: #ddd;
+            display: block;
+            margin: 20px;
+            text-decoration: none;
+            line-height: 28px;
+            color: #666;
+            border-radius: 15px;
+        }
+
+        .btn a.bar i {
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 3px;
+            font-size: 12px;
+            margin: 5px 10px 0px 5px;
+            float: left;
+        }
+
+        .btn a.bar span {
+            font-size: 12px;
+            float: left;
+        }
+
+        .btn a:hover.bar{
+            background: linear-gradient(90deg, #FF847C 0%, #FFE0B0 100%);
+            color: #fff;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);}
+        .btn a:focus.bar {
+            background: linear-gradient(90deg, #FF4D42 0%, #FFC875 100%);
+            color: #fff;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn a:hover.bar i{color: #FF847C;}
+        .btn a:focus.bar i{color: #FF4D42;}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- .btn>a.bar*5>i.xi -->
+    <div class="btn">
+        <a href="#" class="bar"><i class="xi-heart"></i><span>좋아요</span></a>
+        <a href="#" class="bar"><i class="xi-coupon"></i><span>쿠폰</span></a>
+        <a href="#" class="bar"><i class="xi-cookie"></i><span>쿠키</span></a>
+        <a href="#" class="bar"><i class="xi-cloud"></i><span>구름</span></a>
+        <a href="#" class="bar"><i class="xi-gamepad"></i><span>게임</span></a>
+    </div>
+</body>
+
+</html>
