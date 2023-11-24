@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 100%;
+}
+
+#wrap main {
+    width: 100%;
+
+    /* height: 750px; */
+    height: calc(100vh - 120px);
+    background-color: #ccc;
+    display: flex;
+}
+
+#wrap main header {
+    width: 200px;
+    /* height: 750px; */
+    height: calc(100vh - 120px);
+    background-color: #d4a4a4;
+}
+
+#wrap main header h1.logo {
+    height: 100px;
+    background-color: #d3b0b0;
+}
+
+#wrap main header nav.menu {
+    height: calc(100vh - 120px - 100px);
+    background-color: #a38383;
+}
+
+
+
+#wrap main #contents {
+    width: 400px;
+    /* height: 750px; */
+    height: calc(100vh - 120px);
+    background-color: #aa7171;
+}
+
+
+
+
+#wrap main #contents .banner {
+    width: 400px;
+    height: calc((100vh - 120px) / 10 * 2);
+    background-color: #ce3939;
+
+}
+
+#wrap main #contents .notice {
+    width: 400px;
+    height: calc((100vh - 120px) / 10 * 3);
+    background-color: #992b2b;
+}
+
+#wrap main #contents .gallery {
+    width: 400px;
+    height: calc((100vh - 120px) / 10 * 3);
+    background-color: #742020;
+}
+
+#wrap main #contents .link {
+    width: 400px;
+    height: calc((100vh - 120px) / 10 * 2);
+    background-color: #4b1414;
+}
+
+
+
+
+
+
+#wrap main #slide {
+    width: calc(100% - 600px);
+    /* height: 750px; */
+    height: calc(100vh - 120px);
+    background-color: #573939;
+}
+
+#wrap footer {
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+}
